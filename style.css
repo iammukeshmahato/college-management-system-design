@@ -57,3 +57,13 @@
       opacity: 1;
    }
 }
+
+footer a{
+   display: block;
+   color: white;
+   text-decoration: none;
+   margin-bottom: 1rem;
+}
+footer a:hover{
+   color: rgb(214, 214, 214);
+}
