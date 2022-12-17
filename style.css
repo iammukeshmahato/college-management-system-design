@@ -1,3 +1,6 @@
+body{
+   background-color: #dde3ec;
+}
 .nav-wrapper{
   z-index: 999;
   top: 0;

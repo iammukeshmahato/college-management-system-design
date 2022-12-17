@@ -1,20 +1,20 @@
+body{
+  background-color: #4e607a;
+}
+
 .login-dark {
-    height:1000px;
-    background:#475d62 url(/pexels-idriss-meliani-2982449.jpg);
+    min-height:100vh;;
+    background: url(/pexels-idriss-meliani-2982449.jpg);
     background-size:cover;
     position:relative;
   }
   
   .login-dark form {
-    max-width:320px;
+    max-width:350px;
     width:90%;
     background-color:#1e2833;
     padding:40px;
     border-radius:4px;
-    transform:translate(-50%, -50%);
-    position:absolute;
-    top:50%;
-    left:50%;
     color:#fff;
     box-shadow:3px 3px 4px rgba(0,0,0,0.2);
   }
