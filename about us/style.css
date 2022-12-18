@@ -63,3 +63,7 @@ body{
   #about{
     margin-top: 9rem;
   }
+
+  .about-item p{
+   text-align: justify;
+  }
