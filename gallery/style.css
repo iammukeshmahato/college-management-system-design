@@ -1,19 +1,16 @@
-.card-body{
-    background-color:#f2f7f7 ;
+.fancybox img {
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+    /* box-shadow: 0 0 10px 1px black; */
 }
 
-.tab-content .card-body h5{
-    font-family: kanit;
-    font-weight: 800;
-    /* color: rgb(16, 15, 15); */
-
+.item{
+    transition: .5s ease-in-out;
 }
 
-/* body{
-    background-color: #dde3ec;
-} */
-
-#downloads{
-    margin-top: 10rem;
+.item:hover{
+    filter: brightness(75%);
 }
-
+ #gallery{
+    margin-top: 8rem;
+} 
