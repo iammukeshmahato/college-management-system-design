@@ -77,3 +77,8 @@ footer a{
 footer a:hover{
    color: rgb(214, 214, 214);
 }
+
+.carousel-inner img{
+   object-fit:cover;
+   
+}
