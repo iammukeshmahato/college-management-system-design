@@ -1,9 +1,9 @@
-body{
+body {
    background-color: #dde3ec;
 }
-.nav-wrapper{
-  z-index: 999;
-  top: 0;
+.nav-wrapper {
+   z-index: 999;
+   top: 0;
 }
 .navbar {
    box-shadow: 0 4px 6px 0 rgba(19, 22, 26, 0.65);
@@ -48,7 +48,7 @@ body{
    max-height: 100%; */
 }
 
-.card-text{
+.card-text {
    margin-top: 1rem;
 }
 
@@ -68,17 +68,27 @@ body{
    }
 }
 
-footer a{
+footer a {
    display: block;
    color: white;
    text-decoration: none;
    margin-bottom: 1rem;
 }
-footer a:hover{
+footer a:hover {
    color: rgb(214, 214, 214);
 }
 
+<<<<<<< HEAD
 .carousel-inner img{
    object-fit:cover;
    
 }
+=======
+.line {
+   position: relative;
+   top: 1rem;
+   bottom: 1rem;
+   height: 5px;
+   background-image: linear-gradient(45deg, red, blue);
+}
+>>>>>>> 659cae5880ad6ad005c3920c901c942047f2261d
