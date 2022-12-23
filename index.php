@@ -1,112 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
-  <meta name="description" content="This is a web based college management system" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Bootstrap CDN -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" /> -->
-
-
-  <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- link for online icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
-</head>
+<?php include('./header.php') ?>
 
 <body>
-  <!-- nav bar with top contact btns -->
-  <div class="nav-wrapper position-fixed w-100">
-    <div class="top_nav p-3 p-2 d-flex justify-content-between navbar-expand-lg navbar-light"
-      style="background-color: #e3f2fd">
-      <div class="left">
-        <a class="navbar-brand" href="https://www.facebook.com/nbpicollage">
-          <img src="./images/icons/svg icons/facebook (1).svg" alt="" width="20" height="18" />
-        </a>
-
-        <a class="navbar-brand ms-2" href="#">
-          <img src="./images/icons/svg icons/gmail.svg" alt="" width="20" height="20" />
-        </a>
-
-        <a class="navbar-brand ms-2" href="#">
-          <img src="./images/icons/svg icons/location.svg" alt="" width="20" height="20" />
-        </a>
-      </div>
-
-      <div class="right">
-        <a class="navbar-brand" href="#">
-          <img src="./images/icons/svg icons/phone.svg" alt="" width="20" height="20" />
-          011-660867, 664290, 660625
-        </a>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/nav.html"><img src="./images/icons/logo.png" style="height: 40px" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Programs
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="./programs-more-info/dit.html">Diploma In Information Technology</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./programs-more-info/dee.html">Diploma In Electrical Engineering</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./programs-more-info/dce.html">Diploma In Civil Engineering</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./programs-more-info/dge.html">Diploma In Geomatics Engineering</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./programs-more-info/dhm.html">Diploma In Hotel Management</a>
-                </li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./gallery/gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/downloads-button/download.html">Downloads</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact us/contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about us/about-us.html">About Us</a>
-            </li>
-          </ul>
-
-          <a href="#" class="btn btn-outline-primary" id="button">Apply</a>
-          <a href="/login/login.html" class="btn btn-outline-primary">Login</a>
-
-
-
-        </div>
-      </div>
-    </nav>
-  </div>
+<!-- NavBar -->
+<?php include('./nav.php') ?>
 
   <!-- slider -->
   <section>
@@ -126,11 +25,11 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active ">
-          <img src="/images/sliders/admin.png" class="d-block w-100" height="500px" alt="..." />
+          <img src="./images/sliders/admin.png" class="d-block w-100" height="500px" alt="..." />
         </div>
 
         <div class="carousel-item">
-          <img src="/images/sliders/IMG_1294.jpg" class="d-block w-100" height="500px" alt="..." />
+          <img src="./images/sliders/IMG_1294.jpg" class="d-block w-100" height="500px" alt="..." />
         </div>
 
         <div class="carousel-item">
@@ -138,11 +37,11 @@
         </div>
 
         <div class="carousel-item">
-          <img src="/images/sliders/01slider_03_03.jpg" class="d-block w-100" height="500px" alt="..." />
+          <img src="./images/sliders/01slider_03_03.jpg" class="d-block w-100" height="500px" alt="..." />
         </div>
 
         <div class="carousel-item">
-          <img src="/images/sliders/download.jpg" class="d-block w-100" height="500px" alt="..." />
+          <img src="./images/sliders/download.jpg" class="d-block w-100" height="500px" alt="..." />
         </div>
 
         <div class="position-absolute top-50 start-50 translate-middle">
@@ -180,8 +79,6 @@
         </button>
       </div>
   </section>
-
-
 
   <!-- Programs -->
   <section>
@@ -276,7 +173,6 @@
     </div>
   </section>
 
-
   <!-- maps -->
   <section class="mx-4">
     <h1 class="my-5 text-center">Maps</h1>
@@ -285,69 +181,8 @@
       width="100%" height="500px" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
-  <footer class="bg-dark text-white pt-5 pb-4 mt-5">
-    <div class="container text-center text-md-left">
-      <div class="row text-center text-md-left">
+<?php include("./footer.php") ?>
 
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase font-weight-bold text-warning">NBPI</h5>
-          <a href="#">
-            <i class="bi bi-envelope text-light"></i> nbpi.edu@gmail.com
-          </a>
-          <a href="#">
-            <i class="bi bi-telephone ps-2 text-light"></i> 011864290
-          </a>
-          <a href="#"><i class="bi bi-geo-alt-fill text-light"></i> Nepal Banepa Polytechnic Institute, Banepa,
-            Kavre</a>
-        </div>
-
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-            Pages
-          </h5>
-          <a href="/nav.html">Home</a>
-          <a href="/about us/about-us.html">About</a>
-          <a href="/contact us/contact.html">Contact</a>
-          <a href="/downloads-button/download.html">Downloads</a>
-        </div>
-
-        <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-            Services
-          </h5>
-          <a href="#">Student Life</a>
-          <a href="#">Gallery</a>
-          <a href="#">Alumini</a>
-        </div> -->
-
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-            Quick Links
-          </h5>
-          <a href="http://www.ctevt.org.np/">
-            CTEVT (Council for Technical Education and Vocational Training)
-          </a>
-          <a href="http://titi.org.np/">
-            TITI (Training Institute for Technical Instruction)
-          </a>
-          <a href="http://nbpi.edu.np/tslc.php">
-            Tracer Study Questionaire
-          </a>
-        </div>
-
-        <hr style="line-height: 5px; color: white; width: 100%" />
-
-        <div class="row align-item-center">
-          <p class="mb-0">Copyright &copy 2022 All Right Reserved By: <strong>NBPI</strong></p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- CDN for bootstrap JS -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" async defer></script> -->
-
-<script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
