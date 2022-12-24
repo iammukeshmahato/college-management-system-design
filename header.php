@@ -1,3 +1,7 @@
+<?php
+define('URL', 'http://localhost/college-management-system/');
+?>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,10 +12,9 @@
   <!-- Bootstrap CDN -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" /> -->
 
-
-  <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="<?php echo URL ?>bootstrap-5.2.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo URL ?>style.css" />
+  <link rel="shortcut icon" href="<?php echo URL ?>favicon.png" type="image/x-icon">
 
   <!-- link for online icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />

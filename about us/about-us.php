@@ -1,104 +1,14 @@
-<!DOCTYPE html>
-<html>
+<?php include('../header.php') ?>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
-  <meta name="description" content="This is a web based college management system" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
-</head>
+<link rel="stylesheet" href="style.css">
 
 <body>
   <!-- nav bar with top contact btns -->
-  <div class="nav-wrapper position-fixed w-100">
-    <div class="top_nav p-3 p-2 d-flex justify-content-between navbar-expand-lg navbar-light"
-      style="background-color: #e3f2fd">
-      <div class="left">
-        <a class="navbar-brand" href="https://www.facebook.com/nbpicollage">
-          <img src="../images/icons/svg icons/facebook (1).svg" alt="" width="20" height="18" />
-        </a>
 
-        <a class="navbar-brand ms-2" href="#">
-          <img src="../images/icons/svg icons/gmail.svg" alt="" width="20" height="20" />
-        </a>
-
-        <a class="navbar-brand ms-2" href="#">
-          <img src="../images/icons/svg icons/location.svg" alt="" width="20" height="20" />
-        </a>
-      </div>
-
-      <div class="right">
-        <a class="navbar-brand" href="#">
-          <img src="../images/icons/svg icons/phone.svg" alt="" width="20" height="20" />
-          011-660867, 664290, 660625
-        </a>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/nav.html"><img src="../images/icons/logo.png" style="height: 40px" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Programs
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">Diploma In Information Technology</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Diploma In Electrical Engineering</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Diploma In Civil Engineering</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Diploma In Geomatics Engineering</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Diploma In Hotel Management</a>
-                </li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../downloads-button/download.html">Downloads</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../contact us/contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../about us/about-us.html">About Us</a>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-outline-primary" id="button">Apply</a>
-          <a href="../login/login.html" class="btn btn-outline-primary">Login</a>
-        </div>
-      </div>
-    </nav>
-  </div>
+  <?php include('../nav.php') ?>
 
   <section>
-    <div class="container" id="about">
+    <div class="container" id="about" style="margin-top: 150px;">
       <div class="row">
         <div class="col-md-6 mt-3">
           <div class="section-title">
@@ -310,9 +220,9 @@
             Pages
           </h5>
           <a href="../nav.html">Home</a>
-          <a href="../about us/about-us.html">About</a>
-          <a href="../contact us/contact.html">Contact</a>
-          <a href="../downloads-button/download.html">Downloads</a>
+          <a href="../about us/about-us.php">About</a>
+          <a href="../contact us/contact.php">Contact</a>
+          <a href="../downloads-button/download.php">Downloads</a>
         </div>
 
         <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">

@@ -4,13 +4,13 @@
 
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h5 class="text-uppercase font-weight-bold text-warning">NBPI</h5>
-                <a href="#">
+                <a href="mailto:nbpi.edu@gmail.com">
                     <i class="bi bi-envelope text-light"></i> nbpi.edu@gmail.com
                 </a>
-                <a href="#">
+                <a href="tel:011864290">
                     <i class="bi bi-telephone ps-2 text-light"></i> 011864290
                 </a>
-                <a href="#"><i class="bi bi-geo-alt-fill text-light"></i> Nepal Banepa Polytechnic Institute, Banepa,
+                <a href="https://www.google.com/maps/place/JGPF%2BHFX+Banepa+Polytechnic+Institute,+Banepa+45210/"><i class="bi bi-geo-alt-fill text-light" target="_blank"></i> Nepal Banepa Polytechnic Institute, Banepa,
                     Kavre</a>
             </div>
 
@@ -18,10 +18,10 @@
                 <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
                     Pages
                 </h5>
-                <a href="/nav.html">Home</a>
-                <a href="/about us/about-us.html">About</a>
-                <a href="/contact us/contact.html">Contact</a>
-                <a href="/downloads-button/download.html">Downloads</a>
+                <a href="./">Home</a>
+                <a href="./about us/about-us.php">About</a>
+                <a href="./contact us/contact.php">Contact</a>
+                <a href="./downloads-button/download.php">Downloads</a>
             </div>
 
             <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
