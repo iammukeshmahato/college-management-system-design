@@ -5,10 +5,11 @@
 
 h3{
     
-    /* text-align: center; */
+    /* text-align:center; */
 }
 
 img{
+    margin-top: 80px;
     height: 200px;
     width: 200px;
    
