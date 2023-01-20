@@ -1,0 +1,51 @@
+.avatar-xxl {
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+}
+
+.avatar-xxl img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.heading-line {
+    display: flex;
+    align-items: center;
+    color: #1071e5;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.heading-line h6 {
+    font-size: .875rem;
+}
+
+.heading-line:after {
+    content: "";
+    display: block;
+    width: 1px;
+    flex: 1 1;
+    height: 1px;
+    background-color: #cfe4ff;
+    margin-left: 0.5rem;
+}
+
+.form-display .value {
+    font-weight: 600;
+    font-size: .975rem;
+}
+
+.form-display label {
+    color: #5c5c5c;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+}
+
+.des,
+p {
+    font-size: .875rem;
+    margin: 0;
+}
