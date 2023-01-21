@@ -3,61 +3,86 @@
     label span {
         color: red;
     }
-
+    
     button[type=submit] {
         width: 150px;
     }
-
+    
     select {
         text-align: center;
-
     }
-
+    
     fieldset {
         border: 1px solid red;
         padding-bottom: 1rem;
         padding-inline: 0;
         margin-inline: 0;
     }
-
+    
     fieldset legend {
         background: yellow;
-
     }
-
+    
     .form-section-container {
         max-width: calc(100% - 1rem);
         margin-left: 0.5rem;
     }
-
+    
     .info-title {
         background-color: #20c997;
     }
-
+    
     .rounded {
         height: max-content;
+    }
+    
+    #edit {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #edit1 {
+        height: 22px;
+        width: 22px;
     }
 </style>
 
 <main name="" id="main" class="main w-75 mx-auto rounded" style="background: #f6f9ff;">
 
     <div class="main-content rounded" style="border:  0px solid red;">
-        <div class="p-3"
-            style="box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; border-radius:8px;">
+        <div class="p-3" style="box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; border-radius:8px;">
 
             <div class="p-3 mb-2 bg-secondary text-white rounded">
                 <h2 class="text-center">Registration Form</h2>
             </div>
 
-            <form class="row g-3 needs-validation mt-3" novalidate method="POST" enctype="multipart/form-data"
-                action="{{ url('/submit') }}">
+            <form class="row g-3 needs-validation mt-3" novalidate method="POST" enctype="multipart/form-data" action="{{ url('/submit') }}">
 
                 <div class="form-section-container border rounded p-0">
                     <h4 class="info-title p-3 text-white rounded-top">
                         Payment
                     </h4>
-                    <div class="wapper p-3 col-md-6">
+                    <div class="wapper ms-3 mt-3 col-md-6">
                         <span>Total form charge: <strong>Rs.1500</strong></span>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 ms-3">
+                        <label for="Payment Partners" class="fs-4">Choose Payment Partners</label>
+                        <div class="form-check mt-2 ms-3">
+                            <input type="radio" class="form-check-input" id="esewa" name="esewa" value="esewa">
+                            <label class="form-check-label" for="esewa"><b>E-sewa</b></label>
+                            <img src="./esewa-icon-large.png" id="edit1" alt="">
+
+                        </div>
+
+                        <div class="form-check mt-1 ms-3">
+                            <input type="radio" class="form-check-input" name="khalti" id="khalti" value="khalti"><label for="classified" class="text-danger">
+                                </label>
+                            <label class="form-check-label" for="khalti"><b>Khalti</b></label>
+                            <img src="./khalti.png" id="edit" alt="">
+
+                        </div>
+
                     </div>
                 </div>
 
