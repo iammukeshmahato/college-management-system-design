@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap);
+.avatar-xxl {
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+}
+
+.avatar-xxl img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+#logo {
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+}
+
+#logo img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+
+/* .heading-line h6 {
+    font-size: .875rem;
+    font-weight: bold;
+} */
+
+
+/* .heading-line:after {
+    content: "";
+    display: block;
+    width: 1px;
+    flex: 1 1;
+    height: 1px;
+    background-color: #cfe4ff;
+    margin-left: 0.5rem;
+} */
+
+
+/* .form-display .value {
+    font-weight: 600;
+    font-size: .975rem;
+} */
+
+.form-display label {
+    color: #5c5c5c;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+}
+
+#ram {
+    text-align: right;
+    margin-top: 50px;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Mukta", sans-serif;
+}
+
+label {
+    margin-bottom: 0.25rem;
+    font-size: .92rem;
+    font-weight: 600;
+    color: #050000;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+}
+
+h5 {
+    /* color: red; */
+    font-size: 1.2rem;
+    text-align: center!important;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#harry {
+    margin-right: 50px;
+}
+
+#daniel {
+    margin-right: 30px;
+}
+
+#nick {
+    margin-right: 120px;
+}
