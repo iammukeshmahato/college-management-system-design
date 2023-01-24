@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Student form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container p-3 rounded  mt-2 w-75" style=" box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;">
+        <div class="p-3  bg-secondary text-white rounded">
+            <h2 class="text-center">View Student Form</h2>
+        </div>
+        <!-- <hr> -->
+        <form class="row g-3 needs-validation mt-1" novalidate>
+            <div class="wapper border rounded p-3">
+                <div class="row g-3">
+
+
+
+                    <div class="col-md-6 col-lg-3 col-sm-8 ">
+                        <label for="validationCustom04" class="form-label">
+              Educational Year
+            </label><span>*</span>
+                        <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">-----Select-----</option>
+              <option value="">2075</option>
+              <option value="">2076</option>
+              <option value="">2077</option>
+              <option value="">2078</option>
+              <option value="">2079</option>
+              <option value="">2080</option>
+              <option value="">2081</option>
+              <option value="">2082</option>
+              <option value="">2083</option>
+
+            </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Educational Year.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-8 ">
+                        <label for="validationCustom04" class="form-label">
+              Province
+            </label><span>*</span>
+                        <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">-----Select-----</option>
+              <option value="">Madhesh Pradesh</option>
+              <option value="">Bagmati Pradesh</option>
+              <option value="">Gandaki Pradesh</option>
+            </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Province.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-8 ">
+                        <label for="validationCustom04" class="form-label">
+              District
+            </label><span>*</span>
+                        <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">-----Select-----</option>
+              <option value="">Siraha</option>
+              <option value="">Saptari</option>
+              <option value="">Dhanusa</option>
+            </select>
+                        <div class="invalid-feedback">
+                            Please select a valid District.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-8">
+                        <label for="validationCustom04" class="form-label">
+              Local Body
+            </label><span>*</span>
+                        <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">-----Select-----</option>
+              <option value="">Shambhunath nagarpalika</option>
+              <option value="">Lahan nagarpalika</option>
+              <option value="">Banepa Nagarpalika</option>
+            </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Local Body.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-8 ">
+                        <label for="validationCustom04" class="form-label">
+              Ward
+            </label><span>*</span>
+                        <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">-----Select-----</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Ward.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-sm-8">
+                        <label for="validationCustom04" class="form-label">
+              Choose Faculty
+            </label><span>*</span>
+                        <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">-----Select-----</option>
+              <option>Diploma In Information Technology</option>
+              <option>Diploma In Civil Engineering</option>
+              <option>Diploma In Electrical Engineering</option>
+              <option>Diploma In Geometics Engineering</option>
+              <option>Diploma In Hotel Management</option>
+            </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Faculty.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3  col-sm-8 ">
+                        <label for="validationTooltip04" class="form-label"> Semester</label>
+                        <select class="form-select" name="semester" id="semester" required>
+              <option selected disabled value="">-----Select-----</option>
+              <option value="">First Semester</option>
+              <option value="">Second Semester</option>
+              <option value="">Third Semester</option>
+              <option value="">Fourth Semester</option>
+              <option value="">Fifth Semester</option>
+              <option value="">Sixth Semester</option>
+            </select>
+                        <div class="invalid-feedback">
+                            Please select a valid semester.
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-sm-8 " id="edit">
+                        <label for="validationCustom03" class="form-label">Religion</label><span>*</span>
+                        <select class="form-select" name="semester" id="semester" required>
+            <option selected disabled value="">-----Select-----</option>
+            <option value="">Hindu</option>
+            <option value="">Muslim</option>
+            <option value="">Buddhist</option>
+            <option value="">Christian</option>
+          </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid Religion.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-sm-8   ">
+                        <label for="validationCustom01" class="form-label">First name</label><span>*</span>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 col-lg-3  col-sm-8 ">
+                        <label for="validationCustom02" class="form-label">Last name</label><span>*</span>
+                        <input type="text" class="form-control" id="validationCustom02" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3  col-sm-8" id="edit">
+                        <label for="validationCustom03" class="form-label">Registration Number</label><span>*</span>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid Regisration Number.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <hr style="margin-top: 60px; height: px;"> -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+                <button class="btn btn-success me-md-2 mb-4" type="submit">Search</button>
+                <!-- <button class="btn btn-primary" type="button">Button</button> -->
+            </div>
+    </div>
+
+
+    </form>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
