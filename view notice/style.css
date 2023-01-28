@@ -1,0 +1,23 @@
+.about h3 {
+    color: #004a89;
+    font-weight: 500 !important;
+}
+
+b {
+    font-weight: bolder;
+}
+
+.card-body a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* a:hover {
+    font-size: 20px;
+} */
