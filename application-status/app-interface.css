@@ -44,3 +44,22 @@ h3 {
 #edit {
     text-align: center;
 }
+
+#second-row {
+    margin-top: px;
+}
+
+.bd-callout-info {
+    --bd-callout-bg: rgba(var(--bs-info-rgb), .075);
+    --bd-callout-border: rgba(var(--bs-info-rgb), .5);
+}
+
+.bd-callout {
+    border-radius: 4px;
+    /* padding: 1.25rem; */
+    /* margin-top: 0.1em; */
+    /* margin-bottom: 1.25rem; */
+    background-color: var(--bd-callout-bg, var(--bs-gray-100));
+    /* background-color: #2db539; */
+    border-left: 0.28rem solid var(--bd-callout-border, var(--bs-gray-300));
+}
