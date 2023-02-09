@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find teacher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./find-teacher.css">
+</head>
+
+<body>
+    <div class="container">
+        <main id="main" class="main">
+
+            <div class="main-content" style="border:  0px solid red;">
+
+
+                <form class="row g-3 needs-validation" method="POST" action="{{ url('/admin/fetchStudentData') }}">
+
+
+                    <!-- <div class="p-3  bg-secondary text-white rounded form-section-container">
+                        <h2 class="text-center">Assign Student To Semester</h2>
+                    </div> -->
+
+
+                    <div class="form-section-container border rounded p-0">
+                        <h4 class="p-3 text-white bg-secondary rounded-top text-center mb-0">
+                            Find Teacher
+                        </h4>
+
+                        <div class="wapper p-3 pt-0">
+
+                            <div class="row row-cols-lg-5">
+
+
+
+
+                                <div class="col-md-6 mt-3">
+                                    <label for="validationCustom03" class="form-label">Name<span> *</span></label>
+                                    <input type="text" class="form-control" id="validationCustom03" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid Name.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mt-3">
+                                    <label for="batch" class="form-label">Joining Year <span>*</span></label>
+                                    <select name="batch" id="batch" class="form-select text-start" required>
+                                        <option selected disabled value="">Select</option>
+
+                                        <option value="2071">2071</option>
+                                        <option value="2072">2072</option>
+                                        <option value="2073">2073</option>
+                                        <option value="2075">2074</option>
+                                        <option value="2075">2075</option>
+                                        <option value="2076">2076</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="col-md-3 col-sm-4 mt-4 d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-success w-100 mt-4" type="submit">Search</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+
+                <form action="addToSemester" method="POST">
+
+                    <div class=" border rounded mt-4">
+                        <table id="studentList" class=" col-4 table table-striped mb-0" style="width:100%; ">
+                            <thead style="background-color:rgb(0, 135, 253);" class="text-white">
+                                <tr>
+                                    <th>S.N.</th>
+                                    <th>Name</th>
+                                    <th>Address</th>
+                                    <th>Contact</th>
+                                    <th>Gender</th>
+                                    <th>Contact</th>
+                                    <th>Qualification</th>
+                                    <th>Is Dropped</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="yes" id="{{ $std->StudentID }}" name="{{ $std->StudentID }}">
+                                            <label class="form-check-label" for="{{ $std->StudentID }}">Yes</label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <td colspan="10">
+                                        No Record Found
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <div class=" rounded mt-4 form-control">
+
+                        <form action="{{ $url = 'mkm' }}" method="post" class="form-control">
+
+                            <div class="row">
+
+                                <div class="col-md-3 mt-3">
+                                    <label for="faculty" class="form-label">Faculty<span> *</span></label>
+                                    <select name="faculty" id="faculty" class="form-select text-start" required>
+                                        <option selected disabled value="">Select Faculty</option>
+
+                                        <option value="">
+
+                                        </option>
+
+                                    </select>
+                                </div>
+                                <div class="col-md-3 mt-3">
+                                    <label for="semester" class="form-label">Semester Level<span> *</span></label>
+                                    <select name="semester" id="semester" class="form-select text-start" required>
+                                        <option selected disabled value="">Select Semester Level</option>
+
+                                        <option value="{{ $level->semester_id }}">
+
+                                        </option>
+
+                                    </select>
+                                </div>
+
+                                <div class="col-md-3 mt-3">
+                                    <label for="faculty" class="form-label">Subject<span> *</span></label>
+                                    <div class="select-btn">
+                                        <span class="btn-text">Select Subject</span>
+                                        <span class="arrow-down">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </span>
+
+                                    </div>
+                                    <ul class="list-items">
+                                        <li class="item">
+                                            <span class="checkbox">
+                                                <i class="fa-solid fa-check check-icon"></i></span>
+                                            <span class="item-text">Computer Network</span>
+                                        </li>
+                                        <li class="item">
+                                            <span class="checkbox">
+                                                <i class="fa-solid fa-check check-icon"></i></span>
+                                            <span class="item-text">Computer Architecture</span>
+                                        </li>
+                                        <li class="item">
+                                            <span class="checkbox">
+                                                <i class="fa-solid fa-check check-icon"></i></span>
+                                            <span class="item-text">Computer fundamental</span>
+                                        </li>
+                                        <li class="item">
+                                            <span class="checkbox">
+                                                <i class="fa-solid fa-check check-icon"></i></span>
+                                            <span class="item-text">Computer application</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-sm-4 mt-4 justify-content-center align-items-center">
+                                    <button class="btn btn-success w-100 mt-4" type="submit">Assign to Semester</button>
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+            </div>
+        </main>
+    </div>
+
+
+    </div>
+
+
+    <script>
+        const selectBtn = document.querySelector(".select-btn"),
+            items = document.querySelectorAll(".item");
+        selectBtn.addEventListener("click", () => {
+            selectBtn.classList.toggle("open");
+        });
+
+        items.forEach(item => {
+                item.addEventListener("click", () => {
+                    item.classList.toggle("checked");
+
+                    let checked = document.querySelectorAll(".checked"),
+                        btnText = document.querySelector(".btn-text");
+
+                    if (checked && checked.length > 0) {
+                        btnText.innerText = `${checked.length} selected`
+                    } else {
+                        btnText.innerText = `select Language`
+                    }
+
+                });
+            })
+            // function fetchAcademicYear(batch) {
+            //     base = "{{ url('/admin/getAcademicYear') }}" + "/" + batch;
+            //     fetch(base, {
+            //         method: 'GET',
+            //         headers: {
+            //             'Accept': 'application/json',
+            //         },
+            //     }).then(response => response.json()).then(response => {
+            //         let academic_year = document.querySelector("#InYear");
+            //         html = "";
+            //         for (const year of response.academic_year) {
+            //             html += `<option value="${year.year}">${year.year}</option>`;
+            //         }
+            //         academic_year.innerHTML = html;
+            //     });
+            // }
+
+        // window.onload = () => {
+        //     // loading the academic year if the batch field have value after reloading the page.
+        //     if (document.getElementById("batch").value) {
+        //         fetchAcademicYear(document.getElementById("batch").value);
+        //     }
+        // }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
