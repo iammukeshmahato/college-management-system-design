@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Find teacher</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./find-teacher.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
 </head>
 
 <body>
@@ -35,8 +38,6 @@
                             <div class="row row-cols-lg-5">
 
 
-
-
                                 <div class="col-md-6 mt-3">
                                     <label for="validationCustom03" class="form-label">Name<span> *</span></label>
                                     <input type="text" class="form-control" id="validationCustom03" required>
@@ -47,13 +48,12 @@
 
                                 <div class="col-md-6 mt-3">
                                     <label for="batch" class="form-label">Joining Year <span>*</span></label>
-                                    <select name="batch" id="batch" class="form-select text-start" required>
-                                        <option selected disabled value="">Select</option>
-
+                                    <select name="batch" id="batch" class="form-select text-start" required multiple>
+                                        <!-- <option disabled value="">Select</option> -->
                                         <option value="2071">2071</option>
                                         <option value="2072">2072</option>
                                         <option value="2073">2073</option>
-                                        <option value="2075">2074</option>
+                                        <option value="2074">2074</option>
                                         <option value="2075">2075</option>
                                         <option value="2076">2076</option>
 
@@ -104,7 +104,8 @@
 
                                     <td>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="yes" id="{{ $std->StudentID }}" name="{{ $std->StudentID }}">
+                                            <input class="form-check-input" type="checkbox" value="yes"
+                                                id="{{ $std->StudentID }}" name="{{ $std->StudentID }}">
                                             <label class="form-check-label" for="{{ $std->StudentID }}">Yes</label>
                                         </div>
                                     </td>
@@ -154,6 +155,18 @@
                                     </select>
                                 </div>
 
+                                <!-- <form action="/action_page.php">
+                                <label for="cars">Choose a car:</label>
+                                <select name="cars" id="cars" multiple>
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                                <br><br>
+                                <input type="submit" value="Submit">
+                                </form> -->
+
                                 <div class="col-md-3 mt-3">
                                     <label for="faculty" class="form-label">Subject<span> *</span></label>
                                     <div class="select-btn">
@@ -191,15 +204,17 @@
                                 </div>
                             </div>
                     </div>
-                    </form>
+                </form>
             </div>
         </main>
     </div>
 
 
     </div>
-
-
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+    <script>
+        new MultiSelectTag('batch')  // id
+    </script>
     <script>
         const selectBtn = document.querySelector(".select-btn"),
             items = document.querySelectorAll(".item");
@@ -208,20 +223,20 @@
         });
 
         items.forEach(item => {
-                item.addEventListener("click", () => {
-                    item.classList.toggle("checked");
+            item.addEventListener("click", () => {
+                item.classList.toggle("checked");
 
-                    let checked = document.querySelectorAll(".checked"),
-                        btnText = document.querySelector(".btn-text");
+                let checked = document.querySelectorAll(".checked"),
+                    btnText = document.querySelector(".btn-text");
 
-                    if (checked && checked.length > 0) {
-                        btnText.innerText = `${checked.length} selected`
-                    } else {
-                        btnText.innerText = `select Language`
-                    }
+                if (checked && checked.length > 0) {
+                    btnText.innerText = `${checked.length} selected`
+                } else {
+                    btnText.innerText = `select Language`
+                }
 
-                });
-            })
+            });
+        })
             // function fetchAcademicYear(batch) {
             //     base = "{{ url('/admin/getAcademicYear') }}" + "/" + batch;
             //     fetch(base, {
@@ -247,7 +262,9 @@
         // }
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
